@@ -1,0 +1,25 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #181d22;
+}
+
+.hero::before {
+  content: "";
+  width: 50%;
+  background-image: url("./src/img/gente.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 100px;
+  bottom: 0;
+  right: 0;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+}
