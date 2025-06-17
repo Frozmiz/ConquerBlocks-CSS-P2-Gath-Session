@@ -1,0 +1,14 @@
+@import "./_variables";
+@import "./_vendors";
+@import "./_header";
+@import "./_reset";
+@import "./_hero";
+@import "./_buttons";
+
+body {
+  background-color: #181d22;
+  background-image: url("../img/gente.png");
+  background-repeat: no-repeat;
+  background-position: 100% -50%;
+  background-size: 900px 800px;
+}

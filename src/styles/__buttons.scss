@@ -1,0 +1,19 @@
+//BUTTONS
+
+.hero__buttons {
+  display: flex;
+
+  a {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    padding: 20px;
+
+    &:hover {
+      color: rgb(187, 20, 117);
+    }
+  }
+}

@@ -1,0 +1,32 @@
+// HEADER
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+
+  &__logo {
+    padding: 20px;
+  }
+
+  &__nav ul {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  &__nav a {
+    text-decoration: none;
+    color: $grey;
+  }
+
+  &__nav a:hover {
+    color: white;
+  }
+
+  &__nav li:hover {
+    border-bottom: 4px solid rgb(187, 20, 117);
+    border-radius: 10%;
+  }
+}

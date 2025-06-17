@@ -1,0 +1,36 @@
+// Hero-wrapper
+
+.hero-wrapper {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// HERO
+
+.hero {
+  width: 56%;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: left;
+    margin-top: 30px;
+
+    h1 {
+      font-family: $title-font;
+      color: white;
+      font-size: 75px;
+    }
+
+    p {
+      font-family: $primary-font;
+      color: $grey;
+      text-align: left;
+      line-height: 30px;
+      max-width: 65%;
+      border-left: 0;
+      padding-top: 25px;
+    }
+  }
+}
