@@ -1,0 +1,12 @@
+@mixin button-style($bg, $color: white, $radius: 8px) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-weight: 500;
+  border-radius: $radius;
+  background-color: $bg;
+  color: $color;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}

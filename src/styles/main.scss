@@ -4,11 +4,19 @@
 @import "./_reset";
 @import "./_hero";
 @import "./_buttons";
+@import "./_mixins";
+@import "./_items";
+@import "./_layout";
 
 body {
   background-color: #181d22;
   background-image: url("../img/gente.png");
   background-repeat: no-repeat;
-  background-position: 100% -50%;
-  background-size: 900px 800px;
+  background-position: 100% 100%;
+  background-size: 820px 780px;
+}
+
+.hero-wrapper {
+  max-width: 1800px;
+  padding: 0 1rem;
 }

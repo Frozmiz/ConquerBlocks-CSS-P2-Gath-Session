@@ -1,0 +1,30 @@
+.hero__items {
+  display: flex;
+  padding: 40px;
+  color: white;
+  align-items: center;
+}
+
+.hero__item {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+  padding: 20px;
+
+  img {
+    background-color: rgba($grey, 0.2);
+    padding: 6px;
+    border-radius: 20%;
+  }
+
+  p {
+    max-width: 80px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 1.2;
+    font-size: 14px;
+    line-height: 25px;
+  }
+}

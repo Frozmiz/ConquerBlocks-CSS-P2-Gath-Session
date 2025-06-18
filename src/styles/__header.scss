@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding: 20px;
 
   &__logo {
     padding: 20px;
@@ -13,20 +13,27 @@
   &__nav ul {
     display: flex;
     gap: 40px;
-    padding: 20px;
+    padding: 10px;
+    margin-right: 100px;
+
+    li {
+      list-style: none;
+    }
   }
 
   &__nav a {
     text-decoration: none;
     color: $grey;
-  }
 
-  &__nav a:hover {
-    color: white;
+    &:hover {
+      color: white;
+    }
   }
 
   &__nav li:hover {
-    border-bottom: 4px solid rgb(187, 20, 117);
+    color: white;
+    border-bottom: 4px solid $pinkiwinki;
     border-radius: 10%;
+    transition: all 0.3s ease;
   }
 }
