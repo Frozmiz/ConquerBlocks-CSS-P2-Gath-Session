@@ -4,36 +4,28 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-
-  &__logo {
-    padding: 20px;
-  }
+  padding: 3rem 0;
 
   &__nav ul {
     display: flex;
-    gap: 40px;
-    padding: 10px;
-    margin-right: 100px;
+    flex-direction: column;
+    gap: 2rem;
 
-    li {
-      list-style: none;
+    @include respond-to(tablet) {
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 2rem;
     }
   }
 
-  &__nav a {
-    text-decoration: none;
+  &__nav li a {
+    font-size: 1rem;
+    font-weight: 500;
     color: $grey;
 
     &:hover {
-      color: white;
+      color: $pinkiwinki;
+      border-bottom: 2px solid $pinkiwinki;
     }
-  }
-
-  &__nav li:hover {
-    color: white;
-    border-bottom: 4px solid $pinkiwinki;
-    border-radius: 10%;
-    transition: all 0.3s ease;
   }
 }

@@ -1,22 +1,26 @@
 @import "./_variables";
-@import "./_vendors";
-@import "./_header";
 @import "./_reset";
+@import "./_mixins";
+@import "./_vendors";
+
+@import "./_layout";
+@import "./_header";
 @import "./_hero";
 @import "./_buttons";
-@import "./_mixins";
 @import "./_items";
-@import "./_layout";
 
 body {
   background-color: #181d22;
   background-image: url("../img/gente.png");
   background-repeat: no-repeat;
-  background-position: 100% 100%;
-  background-size: 820px 780px;
-}
+  background-position: bottom right;
+  background-size: cover;
 
-.hero-wrapper {
-  max-width: 1800px;
-  padding: 0 1rem;
+  @include respond-to(tablet) {
+    background-size: 0%;
+  }
+
+  @include respond-to(desktop) {
+    background-size: 820px 780px;
+  }
 }

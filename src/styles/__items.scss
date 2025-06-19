@@ -1,30 +1,39 @@
 .hero__items {
   display: flex;
-  padding: 40px;
-  color: white;
+  flex-direction: column;
+  gap: 2rem;
   align-items: center;
-}
+  padding: 2rem;
 
-.hero__item {
-  display: flex;
-  align-items: center;
-
-  gap: 10px;
-  padding: 20px;
-
-  img {
-    background-color: rgba($grey, 0.2);
-    padding: 6px;
-    border-radius: 20%;
+  @include respond-to(tablet) {
+    flex-direction: row;
+    justify-content: start;
   }
 
-  p {
-    max-width: 80px;
+  .hero__item {
     display: flex;
-    flex-direction: column;
-    text-align: left;
-    line-height: 1.2;
-    font-size: 14px;
-    line-height: 25px;
+    align-items: center;
+    gap: 1rem;
+
+    .hero__item_item1 {
+      padding: 1rem;
+    }
+
+    img {
+      background-color: rgba($grey, 0.2);
+      width: 50px;
+      padding: 0.5rem;
+      border-radius: 20%;
+    }
+
+    p {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      max-width: 80px;
+      color: white;
+      font-weight: 500;
+      font-size: 1rem;
+    }
   }
 }

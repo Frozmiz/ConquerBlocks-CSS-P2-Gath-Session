@@ -1,14 +1,45 @@
-html * {
+html,
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  min-height: 100%;
   font-family: $primary-font;
+  font-size: 17px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 *,
 *::before,
 *::after {
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+ul,
+ol {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
